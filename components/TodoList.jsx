@@ -1,6 +1,7 @@
 import * as React from 'react'
 import { todosData } from '../todos/data';
 import { FlatList, Text } from 'react-native';
+import { Todo } from './Todo'
 
 export const TodoList = () => {
 
@@ -8,10 +9,7 @@ export const TodoList = () => {
         <FlatList
             data={todosData}
             keyExtractor={item => item.id.toString()}
-            renderItem={({ item }) => <Text>{item.text}</Text> }
+            renderItem={({ item }) => <Todo {...item}></Todo> }
         />
-        
-
-    
     );
 }

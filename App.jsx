@@ -2,6 +2,9 @@ import { StyleSheet, Text, View, StatusBar } from 'react-native';
 import { TodoList } from './components/TodoList';
 
 export default function App() {
+
+
+
   return (
     <View style={[ styles.statusBar ]}>
       <TodoList/>

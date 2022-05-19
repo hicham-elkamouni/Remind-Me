@@ -10,14 +10,14 @@ export const todosData = [
         id: 2,
         text: "Grocery shopping",
         isCompleted: false,
-        isToday: true,
+        isToday: false,
         hour : "10:00",
     },
     {
         id: 3,
         text: "Clean gecko tank",
         isCompleted: false,
-        isToday: true,
+        isToday: false,
         hour : "10:00",
     },
     {
@@ -30,7 +30,7 @@ export const todosData = [
     {
         id: 5,
         text: "Catch up on Arrested Development",
-        isCompleted: false,
+        isCompleted: true,
         isToday: true,
         hour : "10:00",
     },
@@ -52,7 +52,7 @@ export const todosData = [
         id: 8,
         text: "Learn GraphQL",
         isCompleted: false,
-        isToday: true,
+        isToday: false,
         hour : "10:00",
     },
 ];

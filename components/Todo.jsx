@@ -7,9 +7,11 @@ export const Todo = ({id, text, isCompleted, isToday, hour}) => {
     
     return (
         <View style={styles.container}>
-            <Checkbox isCompleted={isCompleted} />
-            <Text style={styles.text}>{text}</Text>
-            <Text style={styles.time}>{hour}</Text>
+            <Checkbox id={id} isCompleted={isCompleted} text={text} isToday={isToday} hour={hour}/>
+            <View>
+                <Text style={styles.text}>{text}</Text>
+                <Text style={styles.time}>{hour}</Text>
+            </View>
         </View>
     );
     }
@@ -17,6 +19,8 @@ export const Todo = ({id, text, isCompleted, isToday, hour}) => {
 const styles = StyleSheet.create({
     container: {
         marginBottom : 20,
+        flexDirection : 'row',
+        alignItems : 'center',
     },
     text : {
         fontSize : 15,

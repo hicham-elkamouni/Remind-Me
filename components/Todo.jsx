@@ -9,8 +9,8 @@ export const Todo = ({id, text, isCompleted, isToday, hour}) => {
         <View style={styles.container}>
             <Checkbox id={id} isCompleted={isCompleted} text={text} isToday={isToday} hour={hour}/>
             <View>
-                <Text style={styles.text}>{text}</Text>
-                <Text style={styles.time}>{hour}</Text>
+                <Text style={ isCompleted ? [styles.text , { textDecorationLine : 'line-through', color : '#73737330'}] : styles.text}>{text}</Text>
+                <Text style={ isCompleted ? [styles.text , { textDecorationLine : 'line-through', color : '#73737330'}] : styles.text}>{hour}</Text>
             </View>
         </View>
     );
